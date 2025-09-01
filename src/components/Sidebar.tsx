@@ -45,7 +45,7 @@ export default function Sidebar({userName, type}:SidebarComponentProps) {
       <Box>
         <Group p={10}>
             <Indicator inline offset={7} color="red" position="bottom-end" size={12} withBorder>
-              <Avatar src="https://media.discordapp.net/attachments/874212916319113266/1412110206552248400/2.jpg?ex=68b7199c&is=68b5c81c&hm=04c507712317fca13206cc3211688fb655ad4389e1ebffff77a36dc1d8e2e234&=&format=webp&width=941&height=930" radius={"xl"} size={"md"}/>
+              <Avatar src="public\student_pic.jpg" radius={"xl"} size={"md"}/>
             </Indicator>
             <Text component={RouterNavLink} to="/">User : {userName} : {type} </Text>
         </Group>
