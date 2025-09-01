@@ -45,7 +45,7 @@ export default function Sidebar({userName, type}:SidebarComponentProps) {
       <Box>
         <Group p={10}>
             <Indicator inline offset={7} color="red" position="bottom-end" size={12} withBorder>
-              <Avatar src="public\pic.jpg" radius={"xl"} size={"md"}/>
+              <Avatar src="/pic.jpg" radius={"xl"} size={"md"}/>
             </Indicator>
             <Text component={RouterNavLink} to="/">User : {userName} : {type} </Text>
         </Group>
