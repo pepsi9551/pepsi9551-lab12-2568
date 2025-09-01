@@ -12,8 +12,8 @@ interface SidebarComponentProps  {
   userName: string;
   type?: "admin" |"student";
 }
-export type { SidebarProps };
-export default function Sidebar() {
+export type { SidebarComponentProps };
+export default function Sidebar({userName, type}:SidebarComponentProps) {
   return (
     <Stack
       align="stretch"
@@ -42,8 +42,13 @@ export default function Sidebar() {
         </Text> */}
       </Box>
       {/* แสดงผู้ใช้งาน */}
-      <Box p={10}>
-        <Text>chanadda</Text>
+      <Box>
+        <Group p={10}>
+            <Indicator inline offset={7} color="red" position="bottom-end" size={12} withBorder>
+              <Avatar src="public\student_pic.jpg" radius={"xl"} size={"md"}/>
+            </Indicator>
+            <Text component={RouterNavLink} to="/">User : {userName} : {type} </Text>
+        </Group>
       </Box>
     </Stack>
   );
